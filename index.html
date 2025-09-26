@@ -11,7 +11,8 @@
     <style>
       /* Ensure html and body are full height */
       html, body {
-        height: 115%;
+        height: 100%;
+        margin: 0; /* remove default margin */
       }
 
       /* background image because im not boring */
@@ -24,24 +25,22 @@
         font-family: 'Darumadrop One', cursive;
         color: #4daf9f;                  /* default text color */
         display: flex;
-        flex-direction: column;
-        justify-content: center;          /* vertical centering */
+        flex-direction: column;          /* stack elements top to bottom */
         align-items: center;              /* horizontal centering */
         text-align: center;               /* center all text inside elements */
+        padding: 20px;                    /* add some space around edges */
       }
 
       /* Header styling for maximum flair */
-      h1 {
+      h1, h2 {
         font-family: 'Rampart One', cursive;
         color: #21eda6;
         font-weight: bold;
+        margin: 10px 0;
       }
 
-      /* Header styling for maximum flair */
-      h2 {
-        font-family: 'Rampart One', cursive;
-        color: #21eda6;
-        font-weight: bold;
+      h3, h4 {
+        margin: 5px 0;
       }
 
       /* Links styling with hover glow, because cyberpunk neon > plain text */
@@ -60,6 +59,11 @@
         width: 100%;                
       }
 
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
     </style>
   </head>
 
@@ -99,31 +103,32 @@
        class="email-link" target="_top">
       <h4>Email me here!</h4>
     </a>
-        <hr/>
+    <hr/>
+
     <h2>
       Here are some of my interests!
     </h2>
-        <hr/>
-    <h4>
-          <div>StepMania</div>
-     <div>DDR</div>
-     <div>Friday Night Funkin'</div>
-     <div>osu!mania</div>
-     <div>Sonolus</div>
-     <div>Project Sekai</div>
-    (is it obvious i like rhythm games yet)</div>
- 	 <div>Roblox</div>
-   <div>Vocaloid</div>
- <div>UTAU</div>
- <div>SynthV</div>
-   <div>BandLab (and general music production)</div>
-   <div>and uh.. oh yeah im a furry btw</div>
-    </h4>      
     <hr/>
+    <div>
+      <h4>StepMania</h4>
+      <h4>DDR</h4>
+      <h4>Friday Night Funkin'</h4>
+      <h4>osu!mania</h4>
+      <h4>Sonolus</h4>
+      <h4>Project Sekai</h4>
+      <h4>(is it obvious i like rhythm games yet)</h4>
+      <h4>Roblox</h4>
+      <h4>Vocaloid</h4>
+      <h4>UTAU</h4>
+      <h4>SynthV</h4>
+      <h4>BandLab (and general music production)</h4>
+      <h4>and uh.. oh yeah im a furry btw</h4>
+    </div>      
+    <hr/>
+
     <h2>Socials!!</h2>
-            <hr/>
-    <ul style="list-style: none; padding: 0;">
-      <h3>
+    <hr/>
+    <ul>
       <li>
         <a href="https://www.roblox.com/users/7901866073/profile" class="email-link" target="_blank">Roblox</a>
       </li>
@@ -138,10 +143,12 @@
       </li>
     </ul>
     <hr/>
-  </h3>
-  test
-  test2
-  test3
-  test4
+
+    <!-- test lines preserved exactly as-is -->
+    test
+    test2
+    test3
+    test4
+
   </body>
 </html>
